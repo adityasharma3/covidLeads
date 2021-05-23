@@ -50,15 +50,19 @@
     </nav>
 
     <?php
-        if ($dataSentSuceesfully) {
+        
+        if ($dataSentSuceesfully == true) {
             echo "<div class='alert alert-success' role='alert'>Thank you for contributing towards Covid Leads</div>";
             $dataSentSuceesfully = false;
+        } else if ($dataSentSuceesfully == false) {
+            echo "<div class='alert alert-danger' role='alert'>Error! Couldn't add data to database" . mysqli_connect_error() . "</div>";
         }
+
     ?>
 
-    <div class="form-section">
+    <div class="form-section" style="background-color: #212529; color:white;">
 
-        <h3 style="text-align: center; padding:1.5%">Please Enter your details here</h3>
+        <h3 style="text-align: center; padding:1.5%;">Please Enter your details here</h3>
 
         <form action= "leads.php" method="POST">
             <input class="form-control form-control" name = "name" style="margin-top: 10px" type="text" placeholder="Enter Name" aria-label=".form-control-lg example">
@@ -67,7 +71,6 @@
             <textarea class="form-control" name="details" placeholder="Enter details" style="margin-top: 10px;" id="exampleFormControlTextarea1" rows="3"></textarea>
             <button class="btn-primary">Submit</button>
         </form>
-        <button class="btn-secondary">Reset</button>
     </div>
 </body>
 

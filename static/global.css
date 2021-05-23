@@ -1,3 +1,7 @@
+body {
+    background-color:cornflowerblue;
+}
+
 .collapse li {
     margin: 0px 10px;
 }
@@ -7,6 +11,7 @@
     display: block;
     padding: 1.5% 5%;
     border : 0.1px solid grey;
+    background-color: #212529;
     border-radius: 80px;
 }
 
@@ -27,9 +32,33 @@ textarea {
     border-radius: 100px;
 }
 
-@media screen and (max-width : 728px) {
+
+.content-container {
+    margin: 2.5% 15%;
+    background-color: #212529;
+    padding: 2.5%;
+    border-radius: 75px;
+    color: white;
+}
+
+.output-table td {
+    padding: 5%;
+}
+
+@media screen and (max-width : 900px) {
     .form-section {
-        margin: 40% 5%;
+        margin: 20% 5%;
         border: none;
+    }
+
+    .covid-img {
+        width: 0px;
+    }
+
+    .content-container {
+        margin : 15% auto;
+        /* display: flex; */
+        border : none;
+        border-radius: 0px;
     }
 }

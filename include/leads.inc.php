@@ -1,6 +1,6 @@
 <?php
 
-    $dataSentSuceesfully = false;
+    $dataSentSuceesfully;
 
     if (isset($_POST['name'])) {
 
@@ -22,13 +22,15 @@
 
     
 
-        $sql = "INSERT INTO `covidleads`.`leads`(`name`, `city`, `phone`, `details`) VALUES ('$name','$phone','$city','$details')";
+        $sql = "INSERT INTO `covidleads`.`leads`(`name`, `city`, `phone`, `details`) VALUES ('$name','$city','$phone','$details')";
         
         if ($con->query($sql)) {
             $dataSentSuceesfully = true;
         }
 
         $con->close();
+    } else {
+        $dataSentSuceesfully = false;
     }
 
 ?>
