@@ -19,9 +19,9 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark text-white ">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-white ">
         <div class="container-fluid">
-            <a class="navbar-brand text-white" href="#">Covid Leads</a>
+            <a class="navbar-brand text-white" href="../index.php">Covid Leads</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -32,17 +32,17 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="./leads.php">Have Leads?</a>
+                        <a class="nav-link text-white" href="leads.php">Have Leads?</a>
                     </li>
 
                     <li class="nav-item">
                         <a class="nav-link text-white" href="#">View Available Leads</a>
                     </li>
                 </ul>
-                <form class="d-flex">
+                <!-- <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+                </form> -->
             </div>
         </div>
     </nav>
@@ -63,5 +63,7 @@
         </div>
     </div>
 </body>
-
+<!-- <footer>
+    <h5>Made with ❤️ by <a href = "https://github.com/adityasharma3">Aditya Sharma</a></h5>
+</footer> -->
 </html>

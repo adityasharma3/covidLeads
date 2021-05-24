@@ -53,6 +53,7 @@
             <form action = "filter-leads.php" method="POST">
                 <div class="input-section">
                     <input type="text" name="city-input" placeholder="Enter city">
+                    <h4>OR</h4>
                     <input type="text" name="phone-input" placeholder="Enter phone">
                     <!-- <button id = "submit-btn" class = "btn-primary">Search</button> -->
                 </div>
@@ -68,5 +69,7 @@
         </div>
     </div>
 </body>
-
+<footer>
+    <h5>Made with ❤️ by <a href = "https://github.com/adityasharma3">Aditya Sharma</a></h5>
+</footer>
 </html>

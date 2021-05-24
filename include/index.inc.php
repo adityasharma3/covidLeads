@@ -1,12 +1,6 @@
 <?php
     include 'database.details.php';
 
-    $con = mysqli_connect($host , $username , $password , $database);
-
-    if (!$con) {
-        die ("Not able to connect to database due to". mysqli_connect_error());
-    }
-
     $count_data = 0;
     // $latest_addition = "";
     $sql = "SELECT `name`, `city`, `phone`, `details` FROM `covidleads`.`leads` WHERE 1";

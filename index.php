@@ -39,21 +39,21 @@
                     </li>
        
                      <li class="nav-item">
-                        <a class="nav-link text-white" href="./src/leads.php">View Available Leads</a>
+                        <a class="nav-link text-white" href="./src/view-leads.php">View Available Leads</a>
                     </li>
                 </ul>
-                <form class="d-flex">
+                <!-- <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+                </form> -->
             </div>
         </div>
     </nav>
 
     <div class="content-container shadow-lg">
         <h2 style="text-align: center;">CovidLeads</h2><br>
-        <h4>This is a portal where users can enter verified leads and also users can post reqest for leads.</h4>
-        <h4>Also, a request for leads can be posted and user's with resources are requested to help those in need</h4>
+        <h4>This is a portal where users can enter verified leads for those in need.</h4>
+        <!-- <h4>Also, a request for leads can be posted and user's with resources are requested to help those in need</h4> -->
     </div>
 
     <div class="content-container shadow-lg">

@@ -75,12 +75,16 @@ td {
 
 footer {
     position : absolute;
-    top: 97%;
+    top: 98%;
     text-align: center;
     margin: auto;
     background-color: #212529;
     color: white;
     width: 100%;
+}
+
+footer h5 {
+    font-size: 1em;
 }
 
 .input-section {
@@ -104,9 +108,39 @@ footer {
     }
 
     .content-container {
-        margin : 15% auto;
+        margin : 15% 0.25em;
         /* display: flex; */
         border : none;
         border-radius: 0px;
     }
+
+    .form-section {
+        margin: 25% 0.25em;
+        border-radius: 0px;
+    }
+
+    body {
+        background-color: wheat;
+    }
+
+    .input-section {
+        background-color: wheat;
+        margin: 0.1em;
+    }
+
+    footer h5 {
+        font-size: 1em;
+    }
+
+    table td {
+        /* margin: auto; */
+        width: 15em;
+        border:1px solid;
+        overflow: scroll;
+    }
+
+    table {
+        /* border: 1px solid; */
+    }
+
 }

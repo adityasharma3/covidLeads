@@ -2,12 +2,6 @@
     include 'database.details.php';
     $specificDataFound = false;
 
-    $con = mysqli_connect($host , $username , $password , $database);
-
-    if (!($con)) {
-        die("database not connected! due to". mysqli_connect_error());
-    }
-
     if (isset($_POST['city-input'])) {
         $city_input = $_POST['city-input'];
 

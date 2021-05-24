@@ -33,7 +33,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="./src/leads.php">Have Leads?</a>
+                        <a class="nav-link text-white" href= "#">Have Leads?</a>
                     </li>
 
                     <li class="nav-item">
@@ -41,10 +41,10 @@
                     </li>
 
                 </ul>
-                <form class="d-flex">
+                <!-- <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+                </form> -->
             </div>
         </div>
     </nav>
@@ -54,17 +54,14 @@
         if ($dataSentSuceesfully == true) {
             echo "<div class='alert alert-success' role='alert'>Thank you for contributing towards Covid Leads</div>";
             $dataSentSuceesfully = false;
-        } else if ($dataSentSuceesfully == false) {
-            echo "<div class='alert alert-danger' role='alert'>Error! Couldn't add data to database" . mysqli_connect_error() . "</div>";
-        }
-
+        } 
     ?>
 
     <div class="form-section" style="background-color: #212529; color:white;">
 
         <h3 style="text-align: center; padding:1.5%;">Please Enter your details here</h3>
 
-        <form action= "leads.php" method="POST">
+        <form action= "leads.php" method="POST" class="form">
             <input class="form-control form-control" name = "name" style="margin-top: 10px" type="text" placeholder="Enter Name" aria-label=".form-control-lg example">
             <input class="form-control form-control" name = "phone" style="margin-top: 10px" type="text" placeholder="Enter Phone number" aria-label=".form-control-lg example">
             <input class="form-control" name = "city" style="margin-top: 10px" type="text" placeholder="Enter City" aria-label="default input example">
@@ -73,5 +70,7 @@
         </form>
     </div>
 </body>
-
+<footer>
+    <h5>Made with ❤️ by <a href = "https://github.com/adityasharma3">Aditya Sharma</a></h5>
+</footer>
 </html>
