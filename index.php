@@ -1,7 +1,5 @@
 <?php
-
-
-
+    include './include/index.inc.php';
 ?>
 
 <!DOCTYPE html>
@@ -59,8 +57,27 @@
     </div>
 
     <div class="content-container shadow-lg">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, nemo porro temporibus nostrum dolorem consectetur? Exercitationem error, sint consectetur rerum obcaecati inventore rem labore totam, impedit dolor, aliquam saepe natus.</p>
+        <h4>Please consider contributing if you have verified leads. This helps those in need ❤️</h4>
+        <button class="btn-primary"><a style="color: white;" href = "./src/leads.php">Add</a></button>
+        <h4>If you or your loved ones need resources, Please click the button down below</h4>
+        <button class="btn-primary"><a href = "./src/view-leads.php" style =" color: white;">View Resources</a></button>
     </div>      
+
+    <div class="content-container shadow-lg">
+        <?php
+            echo "<h4>$count_data</h4>";
+        ?>
+        <h6>Verified Leads</h6>
+
+        <!-- <?php
+            // echo "<h4>$latest_addition</h4>";
+        ?>
+        <h6>Latest Available Resource</h6> -->
+    </div>
 </body>
+
+<footer>
+    <h5>Made with ❤️ by <a href = "https://github.com/adityasharma3">Aditya Sharma</a></h5>
+</footer>
 
 </html>

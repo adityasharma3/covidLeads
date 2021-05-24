@@ -2,6 +2,13 @@ body {
     background-color:cornflowerblue;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    padding: 0.15rem;
+}
+
 .collapse li {
     margin: 0px 10px;
 }
@@ -12,7 +19,7 @@ body {
     padding: 1.5% 5%;
     border : 0.1px solid grey;
     background-color: #212529;
-    border-radius: 80px;
+    border-radius: 1rem;
 }
 
  button {
@@ -34,15 +41,52 @@ textarea {
 
 
 .content-container {
-    margin: 2.5% 15%;
+    margin: 2% 15%;
     background-color: #212529;
     padding: 2.5%;
-    border-radius: 75px;
+    border-radius: 1rem;
     color: white;
 }
 
-.output-table td {
-    padding: 5%;
+.content-container > h4 , .content-container > h6 {
+    text-align: center;
+}
+
+.output  {
+    padding: 1.5%;
+}
+
+#text {
+    width: 100rem;
+}
+
+th {
+    width: 20rem;
+    text-align: -webkit-match-parent;
+    text-align: center;
+}
+
+td {
+    padding: 2%;
+    width: 20rem;
+    text-align: -webkit-match-parent;
+    text-align: center;
+}
+
+footer {
+    position : absolute;
+    top: 97%;
+    text-align: center;
+    margin: auto;
+    background-color: #212529;
+    color: white;
+    width: 100%;
+}
+
+.input-section {
+    display: flex;
+    justify-content: center;
+    margin: 0px 2.5% 5% 2.5%;
 }
 
 @media screen and (max-width : 900px) {

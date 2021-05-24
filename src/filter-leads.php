@@ -49,6 +49,12 @@ include '../include/view-leads.inc.php'
 
     <div class="content-container shadow-lg">
         <div class="output">
+            <div class="input-section">
+                <input type="text" name="city" placeholder="Enter city">
+                <input type="text" name="phone" placeholder="Enter phone">
+                <button stle = "btn-primary">Search</button>
+            </div>
+
             <?php
                 if ($dataFound) {
                     echo $output;
@@ -58,7 +64,7 @@ include '../include/view-leads.inc.php'
                 }
             ?>
             <form action="view-leads.php">
-                <button class="btn-primary"><a href = "./filter-leads.php" style="color: whitesmoke;">Filter data</a></button>
+                <!-- <button class="btn-primary"><a href = "" style="color: whitesmoke;">Filter data</a></button> -->
             </form>
         </div>
     </div>

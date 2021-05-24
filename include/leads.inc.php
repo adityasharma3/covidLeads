@@ -1,13 +1,14 @@
 <?php
+    include 'database.details.php';
 
     $dataSentSuceesfully;
 
     if (isset($_POST['name'])) {
 
-        $host = "localhost";
-        $username = "root";
-        $password = "";
-        $database = "covidleads";
+        // $host = "localhost";
+        // $username = "root";
+        // $password = "";
+        // $database = "covidleads";
 
         $con = mysqli_connect($host , $username , $password , $database);
 

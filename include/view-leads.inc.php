@@ -1,7 +1,8 @@
 <?php
-/* Attempt MySQL server connection. Assuming you are running MySQL
-  server with default setting (user 'root' with no password) */
-  $link = mysqli_connect("localhost", "root", "", "covidleads");
+
+  include 'database.details.php';
+
+  $link = mysqli_connect($host , $username , $password , $database);
   
   // Check connection
   if($link === false){
@@ -13,23 +14,6 @@
 
   if($result = mysqli_query($link, $sql)){
       if(mysqli_num_rows($result) > 0){
-          // echo "<table>";
-          //     echo "<tr>";
-          //         echo "<th>id</th>";
-          //         echo "<th>first_name</th>";
-          //         echo "<th>last_name</th>";
-          //         echo "<th>email</th>";
-          //     echo "</tr>";
-          // while($row = mysqli_fetch_array($result)){
-          //     echo "<tr>";
-          //         echo "<td>" . $row['name'] . "</td>";
-          //         echo "<td>" . $row['city'] . "</td>";
-          //         echo "<td>" . $row['phone'] . "</td>";
-          //         echo "<td>" . $row['details'] . "</td>";
-          //     echo "</tr>";
-          // }
-          // echo "</table>";
-
           $output = 
           "<table class = 'output-table'>
             <tr>
@@ -42,12 +26,14 @@
 
           while($row = mysqli_fetch_array($result)){
             $output .= 
-            "<tr>
+            "<table>
+            <tr>
               <td>" . $row['name'] . "</td>
               <td>" . $row['city'] . "</td>
               <td>" . $row['phone'] . "</td>
               <td>" . $row['details'] . "</td>
-            </tr>";
+            </tr>
+            </table>";
           }
           
           $output .= "</table>";
@@ -65,5 +51,3 @@
   
   // Close connection
   // mysqli_close($link);
-
-?>
