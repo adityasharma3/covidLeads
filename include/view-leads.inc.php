@@ -1,6 +1,7 @@
 <?php
 
   include 'database.details.php';
+  // $specificOutput = "";
 
   $link = mysqli_connect($host , $username , $password , $database);
   
@@ -36,7 +37,7 @@
             </table>";
           }
           
-          $output .= "</table>";
+          // $output .= "</table>";
 
           $dataFound = true;
           // Free result set

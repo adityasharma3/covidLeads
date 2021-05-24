@@ -85,8 +85,12 @@ footer {
 
 .input-section {
     display: flex;
-    justify-content: center;
-    margin: 0px 2.5% 5% 2.5%;
+    justify-content : space-evenly; 
+    margin: 0px 2.5% 0.5% 2.5%;
+}
+
+#submit-btn {
+    text-align: unset;
 }
 
 @media screen and (max-width : 900px) {

@@ -1,5 +1,5 @@
 <?php
-include '../include/view-leads.inc.php'
+    include '../include/view-leads.inc.php'
 ?>
 
 <!DOCTYPE html>

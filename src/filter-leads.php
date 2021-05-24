@@ -1,5 +1,6 @@
 <?php
-include '../include/view-leads.inc.php'
+    include '../include/filter-leads.inc.php';
+    include '../include/view-leads.inc.php';
 ?>
 
 <!DOCTYPE html>
@@ -36,7 +37,7 @@ include '../include/view-leads.inc.php'
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">View Available Leads</a>
+                        <a class="nav-link text-white" href="./view-leads.php">View Available Leads</a>
                     </li>
                 </ul>
                 <form class="d-flex">
@@ -49,23 +50,21 @@ include '../include/view-leads.inc.php'
 
     <div class="content-container shadow-lg">
         <div class="output">
-            <div class="input-section">
-                <input type="text" name="city" placeholder="Enter city">
-                <input type="text" name="phone" placeholder="Enter phone">
-                <button stle = "btn-primary">Search</button>
-            </div>
+            <form action = "filter-leads.php" method="POST">
+                <div class="input-section">
+                    <input type="text" name="city-input" placeholder="Enter city">
+                    <input type="text" name="phone-input" placeholder="Enter phone">
+                    <!-- <button id = "submit-btn" class = "btn-primary">Search</button> -->
+                </div>
+                <button id = "submit-btn" class = "btn-primary">Search</button>
+            </form>
 
             <?php
-                if ($dataFound) {
-                    echo $output;
-                    
-                } else {
-                    echo "<h4>No data found!</h4>";
-                }
+                if ($specificDataFound)
+                    echo $specificOutput;
+                else 
+                    echo "";
             ?>
-            <form action="view-leads.php">
-                <!-- <button class="btn-primary"><a href = "" style="color: whitesmoke;">Filter data</a></button> -->
-            </form>
         </div>
     </div>
 </body>
