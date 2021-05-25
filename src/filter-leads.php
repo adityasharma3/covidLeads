@@ -15,7 +15,7 @@
     <link href="https:cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
     <script src="https:cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-
+    <script src="../js/form.js" defer></script>
     <link rel="stylesheet" href="../static/global.css">
 </head>
 
@@ -52,9 +52,10 @@
         <div class="output">
             <form action = "filter-leads.php" method="POST">
                 <div class="input-section">
-                    <input type="text" name="city-input" placeholder="Enter city">
-                    <h4>OR</h4>
-                    <input type="text" name="phone-input" placeholder="Enter phone">
+                    <input type="text" id = "city-input"name="city-input" placeholder="Enter city">
+                    <!-- <h4>OR</h4> -->
+                    <input type="text" name="phone-input" id="phone-input" placeholder="Enter phone">
+                    <input type="text" name="desc-input" id = "desc-input" placeholder="Enter description">
                     <!-- <button id = "submit-btn" class = "btn-primary">Search</button> -->
                 </div>
                 <button id = "submit-btn" class = "btn-primary">Search</button>
